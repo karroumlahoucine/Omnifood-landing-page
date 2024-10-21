@@ -1,0 +1,336 @@
+/*******************************/
+/* FOR SMALLER DESKTOPS BELOW 1344px */
+/*******************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*******************************/
+/* LANDSCAPE TABLETS BELOW 1200px */
+/*******************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    row-gap: 4.8rem;
+    column-gap: 6.4rem;
+  }
+
+  .heading-secondry {
+    font-size: 3.6rem;
+  }
+
+  .heading-third {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.1rem 3.2rem 3.1rem;
+  }
+}
+
+/*******************************/
+/* (TABLETS) BELOW 944px */
+/*******************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-img {
+    background-position: unset;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .btn--form {
+    margin-bottom: 1.2rem;
+  }
+
+  .btn-mobile {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* display can't use transition */
+
+    /* (1) */
+    opacity: 0;
+
+    /* (2) Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+
+    /* (3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .btn-mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+  .nav-open .btn-mobile-icon[name="close-outline"] {
+    display: block;
+  }
+}
+
+/*******************************/
+/* (smaller TABLETS) BELOW 704px */
+/*******************************/
+@media (max-width: 44em) {
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .heading-secondry {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 8.4rem;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .adresse-col,
+  .logo-col {
+    grid-column: span 3;
+  }
+}
+
+/*******************************/
+/* (phones) BELOW 544px */
+/*******************************/
+@media (max-width: 34em) {
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--3,
+  .grid--4,
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img {
+    height: 32rem;
+    grid-row: 1;
+    background-position: center;
+  }
+
+  .cta-text-box {
+    padding: 4.8rem 3.2rem 3.2rem 3.2rem;
+  }
+}
+
+/* - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 /
+   48 / 64 / 80 / 96 / 128
+  
+- FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 
+  44 / 52 / 62 / 74 / 86 / 98 */
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
